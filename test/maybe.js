@@ -14,6 +14,10 @@ describe('Maybe', function () {
     (new Maybe() instanceof Maybe).should.be.true;
   });
 
+  it('should provide a Maybe factory', function () {
+    (Maybe() instanceof Maybe).should.be.true;
+  });
+
   it('should have a property `val` equivalent to its constructor\'s first parameter', function () {
     justs.forEach(function (val) {
       (new Maybe(val)).val.should.equal(val);
