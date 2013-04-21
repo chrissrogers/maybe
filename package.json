@@ -1,0 +1,21 @@
+{
+  "name":         "maybe",
+  "version":      "0.0.0",
+  "description":  "Maybe monad for JavaScript",
+  "main":         "lib/maybe.js",
+  "repository": {
+    "type":       "git",
+    "url":        "https://github.com/chrissrogers/maybe.git"
+  },
+  "bugs":         "https://github.com/chrissrogers/maybe/issues",
+  "scripts": {
+    "test":       "mocha"
+  },
+  "keywords": [ "maybe", "monad", "type", "haskell", "null" ],
+  "devDependencies": {
+    "mocha":  "1.x",
+    "should": "1.x",
+  },
+  "author":  "Christopher Rogers",
+  "license": "MIT"
+}
