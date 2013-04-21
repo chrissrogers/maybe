@@ -1,6 +1,6 @@
 {
   "name":         "maybe",
-  "version":      "0.0.0",
+  "version":      "0.0.1",
   "description":  "Maybe monad for JavaScript",
   "main":         "lib/maybe.js",
   "repository": {
@@ -9,13 +9,14 @@
   },
   "bugs":         "https://github.com/chrissrogers/maybe/issues",
   "scripts": {
-    "test":       "mocha"
+    "test":       "node_modules/.bin/mocha --require should --ui bdd --reporter spec --recursive"
   },
-  "keywords": [ "maybe", "monad", "type", "haskell", "null" ],
+  "keywords":   [ "maybe", "monad", "type", "haskell", "null" ],
   "devDependencies": {
-    "mocha":  "1.x",
-    "should": "1.x"
+    "mocha":      "1.x",
+    "should":     "1.x",
+    "lodash":     "*"
   },
-  "author":  "Christopher Rogers",
-  "license": "MIT"
+  "author":       "Christopher Rogers",
+  "license":      "MIT"
 }
