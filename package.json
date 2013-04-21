@@ -14,7 +14,7 @@
   "keywords": [ "maybe", "monad", "type", "haskell", "null" ],
   "devDependencies": {
     "mocha":  "1.x",
-    "should": "1.x",
+    "should": "1.x"
   },
   "author":  "Christopher Rogers",
   "license": "MIT"
