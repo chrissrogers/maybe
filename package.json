@@ -9,13 +9,15 @@
   },
   "bugs":         "https://github.com/chrissrogers/maybe/issues",
   "scripts": {
-    "test":       "node_modules/.bin/mocha --require should --ui bdd --reporter spec --recursive"
+    "test":       "node_modules/.bin/mocha --require should --ui bdd --reporter mocha-lcov-reporter --recursive | ./node_modules/coveralls/bin/coveralls.js"
   },
   "keywords":   [ "maybe", "monad", "type", "haskell", "null" ],
   "devDependencies": {
     "mocha":      "1.x",
     "should":     "1.x",
-    "lodash":     "*"
+    "lodash":     "*",
+    "jscoverage": "*",
+    "coveralls":  "*"
   },
   "author":       "Christopher Rogers",
   "license":      "MIT"

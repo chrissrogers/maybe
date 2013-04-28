@@ -1,12 +1,22 @@
 
-var _          = require('lodash');
-var Maybe      = require('../');
+var _ = require('lodash');
 
 // test data
 var justs      = [true, false, 0, '', [], {}],
     nothings   = [undefined, null],
     reliable   = function () { return process.hrtime(); },
     unreliable = function () { return Math.random() > 0.5 || undefined; };
+
+describe('Test coverage', function () {
+
+  it('should generate instrumentation', function (done) {
+    require('child_process').exec('$(npm root)/.bin/jscoverage lib lib-cov', done);
+  });
+
+});
+
+// module
+var Maybe = process.env.MAYBE_COV ? require('../lib-cov') : require('../');
 
 describe('Maybe', function () {
 
