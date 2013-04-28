@@ -1,4 +1,5 @@
 
+// util
 var _ = require('lodash');
 
 // test data
@@ -7,16 +8,24 @@ var justs      = [true, false, 0, '', [], {}],
     reliable   = function () { return process.hrtime(); },
     unreliable = function () { return Math.random() > 0.5 || undefined; };
 
-describe('Test coverage', function () {
+// library
+var Maybe = require('../');
 
-  it('should generate instrumentation', function (done) {
-    require('child_process').exec('$(npm root)/.bin/jscoverage lib lib-cov', done);
+if (process.env.MAYBE_COV) {
+
+  describe('Test coverage', function () {
+
+    it('should generate instrumentation', function (done) {
+      require('child_process').exec('$(npm root)/.bin/jscoverage lib lib-cov', done);
+    });
+
+    it('should load the instrumented module', function () {
+      Maybe = require('../lib-cov/maybe');
+    });
+
   });
 
-});
-
-// module
-var Maybe = process.env.MAYBE_COV ? require('../lib-cov/maybe') : require('../');
+}
 
 describe('Maybe', function () {
 
