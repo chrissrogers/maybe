@@ -1,4 +1,4 @@
-maybe [![Build Status](https://travis-ci.org/chrissrogers/maybe.png)](https://travis-ci.org/chrissrogers/maybe)
+maybe [![Build Status](https://travis-ci.org/chrissrogers/maybe.png)](https://travis-ci.org/chrissrogers/maybe) [![Coverage Status](https://coveralls.io/repos/chrissrogers/maybe/badge.png?branch=master)](https://coveralls.io/r/chrissrogers/maybe)
 =====
 
 This is the Maybe monad for JavaScript. Never null again.
