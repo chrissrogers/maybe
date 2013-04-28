@@ -16,7 +16,7 @@ describe('Test coverage', function () {
 });
 
 // module
-var Maybe = process.env.MAYBE_COV ? require('../lib-cov') : require('../');
+var Maybe = process.env.MAYBE_COV ? require('../lib-cov/maybe') : require('../');
 
 describe('Maybe', function () {
 
