@@ -24,7 +24,7 @@ Node 0.8+ is supported. Older versions of Node may work, but are not targetted.
 
 [Null is dangerous][tony-says-so].
 
-Detection of data absence can be on-trivial
+Detection of data absence can be non-trivial
 ```js
 typeof undefined; // => "undefined"
 typeof null;      // => "object"
