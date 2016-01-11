@@ -1,25 +1,33 @@
 {
-  "name":         "maybe",
-  "version":      "0.0.2",
-  "description":  "Maybe monad for JavaScript",
-  "main":         "lib/maybe.js",
+  "name": "maybe",
+  "version": "0.0.2",
+  "description": "Maybe monad for JavaScript",
+  "main": "lib/maybe.js",
   "repository": {
-    "type":       "git",
-    "url":        "https://github.com/chrissrogers/maybe.git"
+    "type": "git",
+    "url": "https://github.com/chrissrogers/maybe.git"
   },
-  "bugs":         "https://github.com/chrissrogers/maybe/issues",
+  "bugs": "https://github.com/chrissrogers/maybe/issues",
   "scripts": {
-    "test":       "MAYBE_COV=1 node_modules/.bin/mocha --require should --ui bdd --reporter mocha-lcov-reporter --recursive | ./node_modules/.bin/coveralls"
+    "test": "MAYBE_COV=1 node_modules/.bin/mocha --require should --ui bdd --reporter mocha-lcov-reporter --recursive | ./node_modules/.bin/coveralls",
+    "browser": "node_modules/.bin/browserify lib/maybe.js -o lib/maybe.browser.js"
   },
-  "keywords":   [ "maybe", "monad", "type", "haskell", "null" ],
+  "keywords": [
+    "maybe",
+    "monad",
+    "type",
+    "haskell",
+    "null"
+  ],
   "devDependencies": {
-    "mocha":               "1.x",
+    "browserify": "^13.0.0",
+    "coveralls": "*",
+    "jscoverage": "*",
+    "lodash": "*",
+    "mocha": "1.x",
     "mocha-lcov-reporter": "*",
-    "should":              "1.x",
-    "lodash":              "*",
-    "jscoverage":          "*",
-    "coveralls":           "*"
+    "should": "1.x"
   },
-  "author":       "Christopher Rogers",
-  "license":      "MIT"
+  "author": "Christopher Rogers",
+  "license": "MIT"
 }
