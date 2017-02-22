@@ -1,6 +1,7 @@
 
 // util
-var _ = require('lodash');
+var _ = require('lodash'),
+    should = require('should');
 
 // test data
 var justs      = [true, false, 0, '', [], {}],
@@ -24,7 +25,6 @@ if (process.env.MAYBE_COV) {
     });
 
   });
-
 }
 
 describe('Maybe', function () {
