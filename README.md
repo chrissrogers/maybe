@@ -140,6 +140,6 @@ reports.
 I would like to encourage all new code to include associated tests and jsdoc annotation. Thanks!
 
 [hs-maybe]: http://www.haskell.org/ghc/docs/7.4-latest/html/libraries/base-4.5.1.0/Data-Maybe.html
-[tony-says-so]: http://qconlondon.com/london-2009/presentation/Null+References:+The+Billion+Dollar+Mistake
+[tony-says-so]: https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare
 
 [gh-issues]: https://github.com/chrissrogers/maybe/issues
