@@ -90,7 +90,7 @@ Opposite of `maybe.isJust()`
 ### `maybe.memoize()`
 
 Calling `memoize` on your maybe will ensure that its value function is only executed the first time
-you call `maybe.value()`, and that its return value will be cached for all subsequest calls
+you call `maybe.value()`, and that its return value will be cached for all subsequent calls
 of `maybe.value()`.
 
 ```js
